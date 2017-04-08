@@ -1,0 +1,26 @@
+<template name="searchList">
+	<div class="area page-header clearfix">
+			<h4 class="pull-left">企业列表</h4>
+			<div class="pull-right">
+				<a href="/"> 返回 ></a>
+			</div>
+
+	</div>
+		<ul class="bmlist">
+
+			<li>
+				<strong>企业名称</strong>
+				<strong>企业注册地址</strong>
+				<strong>法人代表</strong>
+				<strong>注册日期</strong>
+
+			</li>
+				{{#each bookmarks}}
+				{{> bookmark}}
+
+				{{/each}}
+
+
+		</ul>
+
+</template>
